@@ -45,6 +45,9 @@ def reset_number():
     global number, buttons
     number = 1
     app.after_cancel(cur_timer)
+    time_label_res.configure(text="-")
+    expand_label_res.configure(text="-")
+    steps_label_res.configure(text="-")
     for button in buttons:
         if button.cget('text') != '-':
             button.configure(text='-', bg="#FFFFFF",
@@ -71,7 +74,7 @@ def import_number():
                     raise InvalidInputException(
                         "Input must be between 1 and 16")
             res.append(inp)
-
+        reset_number()
         # Ubah input ke puzzle
         state = State(np.array(res))
 

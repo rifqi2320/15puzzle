@@ -36,9 +36,7 @@ git clone https://github.com/rifqi2320/15puzzle
 
 ### How to use
 
-1. Input the initial puzzle  
-   a. By clicking the puzzle one by one  
-   b. By input text on input area
+1. Input the initial puzzle by input text on input area
 
 ```
 Example
@@ -53,6 +51,9 @@ Example
 9 7 15 11
 13 14 10 12
 ```
+
+2. Click `Import` to import the text into the puzzle
+3. Click `Visualize` to start visualize
 
 ## Links
 
